@@ -1,4 +1,8 @@
+
+
 def mainloop():
+
+
 
 
     import random
@@ -13,7 +17,7 @@ def mainloop():
         as_number = int(text)
 
         if as_number == n:
-            print("Det var rätt du satte det på", antal_gissningar, "gissningar. ")
+
             break
         antal_gissningar = antal_gissningar + 1
 
@@ -24,3 +28,5 @@ def mainloop():
             print("Tyvärr fel, mitt nummer är lägre. Försök igen!")
 
 mainloop()
+antal_gissningar = 1
+print("Det var rätt du satte det på", antal_gissningar, "gissningar. ")
