@@ -1,13 +1,9 @@
-
-
 def mainloop():
 
     def ask_number():
         text = input("Vad är din gissning?")
         tal = int(text)
         return tal
-
-    answer = ask_number()
 
     import random
 
@@ -17,19 +13,18 @@ def mainloop():
     antal_gissningar = 1
 
     while True:
-        text = input("Din gissning: ")
-        as_number = int(text)
 
-        if as_number == n:
+        answer = ask_number()
+
+        if answer == n:
             print("Det var rätt du satte det på", antal_gissningar, "gissningar. ")
             break
         antal_gissningar = antal_gissningar + 1
 
-        if as_number < n:
+        if answer < n:
             print("Tyvärr fel, mitt nummer är högre. Försök igen!")
 
-        if as_number > n:
+        if answer > n:
             print("Tyvärr fel, mitt nummer är lägre. Försök igen!")
 
 mainloop()
-
