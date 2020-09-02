@@ -12,16 +12,16 @@ def run():
     b = int(input("B="))
     if answer == "1":
         result = Uppg_7_calc.add(a, b)
-        print("Result = " + str(result))
+        print(f"{a} operation {b} = {result}")
     if answer == "2":
         result = Uppg_7_calc.subtract(a, b)
-        print("Result = " + str(result))
+        print(f"{a} operation {b} = {result}")
     if answer == "3":
         result = Uppg_7_calc.multiply(a, b)
-        print("Result = " + str(result))
+        print(f"{a} operation {b} = {result}")
     if answer == "4":
         result = Uppg_7_calc.divide(a, b)
-        print("Result = " + str(result))
+        print(f"{a} operation {b} = {result}")
 
 
 if __name__ == '__main__':
