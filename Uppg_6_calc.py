@@ -1,3 +1,4 @@
+
 def add(a, b):
     result = a + b
     return result
@@ -14,7 +15,7 @@ def multiply(a, b):
 
 
 def divide(a, b):
-    result = a // b
+    result = a / b
     return result
 
 
@@ -29,6 +30,7 @@ def run():
     b = int(input("B="))
     if answer == "1":
         result = add(a, b)
+        print("Result = " + str(result))
     if answer == "2":
         result = subtract(a, b)
         print("Result = " + str(result))
