@@ -12,3 +12,8 @@ Vilken funktion används för att skriva ut saker på skärmen?
 Ditt svar: input
 Fel! Rätt svar: print"""
 
+print("Vilken funktion används för att skriva ut saker på skärmen?")
+
+while True:
+    text = input("Ditt svar: ")
+    answer = str(text)
