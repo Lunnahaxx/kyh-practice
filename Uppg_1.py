@@ -9,3 +9,4 @@ lagrats i variabeln "name", och skriv ut resultatet på skärmen
 
 print("Your name is: " + name)"""
 
+name = input("What is your name?")
