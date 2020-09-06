@@ -8,21 +8,25 @@ Genomför följande ändringar.
 reda på hur många gissningar användaren behövde för att hitta talet.
 Skriv ut hur många gissningar efteråt."""
 
+
 import random
 
-n = random.randint(1, 20)
-print("I'm thinking of a value between 1 and 30. Guess which?")
+n = random.randint(1, 100)
+print("Jag tänker på ett nummer mellan 1 och 100. Du skall nu gissa vilket.")
+
+antal_gissningar = 1
 
 while True:
-    text = input("Your guess: ")
+    text = input("Vad är din gissning: ")
     as_number = int(text)
 
     if as_number == n:
-        print("Correct!")
+        print("Det var rätt du satte det på", antal_gissningar, "gissningar. ")
         break
+    antal_gissningar = antal_gissningar + 1
 
     if as_number < n:
-        print("Wrong, my number is higher.. Try again!")
+        print("Tyvärr fel, mitt nummer är högre. Försök igen!")
 
     if as_number > n:
-        print("Wrong, my number is lower... Try again!")
+        print("Tyvärr fel, mitt nummer är lägre. Försök igen!")
