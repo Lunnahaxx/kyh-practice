@@ -17,15 +17,20 @@ def ask_number():
 
 import random
 
-n = random.randint(1, 100)
+n = random.randint(1, 3)
 print("Jag tänker på ett nummer mellan 1 och 100. Du skall nu gissa vilket.")
 
 def mainloop():
 
+    def ask_number():
+        text = input("Vad är din gissning? ")
+        tal = int(text)
+        return tal
+
     antal_gissningar = 1
     while True:
-        text = input("Vad är din gissning: ")
-        as_number = int(text)
+
+        as_number = ask_number()
 
         if as_number == n:
             print("Det var rätt du satte det på", antal_gissningar, "gissningar. ")
