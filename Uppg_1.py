@@ -1,4 +1,4 @@
-"""Task Assignment - Uppg_1
+"""Uppg_2 - Task assignment
 Ex1: Fråga användaren "What is your name?" och lagra svaret
 i en variabel med namnet "name"
 
