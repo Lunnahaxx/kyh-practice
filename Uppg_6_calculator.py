@@ -1,5 +1,44 @@
-import Uppg_7_calc
+"""
+Här är programmet jag demonstrerade,
+fast utan indentering eller mellanrum.
+Efter programmet står några övningar.
+Kom ihåg att testa och committa mellan varje deluppgift!
 
+def add(a, b):
+result = a + b
+return result
+def subtract(a, b):
+result = a + b
+return result
+def multiply(a, b):
+result = a + b
+return result
+def divide(a, b):
+result = a + b
+return result
+def run():
+print("This program will help with simple calculations. What do you want to do?")
+print("1 - add numbers")
+print("2 - subtract numbers")
+answer = input(">> ")
+a = int(input("A="))
+b = int(input("B="))
+if answer == "1":
+result = add(a, b)
+if answer == "2":
+result = subtract(a, b)
+print("Result = " + str(result))
+if __name__ == '__main__':
+run()
+
+
+6.1 Få igång programmet d.v.s få till indenteringen och
+lägg till mellanrum där det känns vettigt t.ex. mellan funktioner
+6.2 Subtraktion funkar inte (testa!). Rätta felet.
+6.3 Multiplikation och division är inte färdigt, bara funktionerna finns.
+Utöka programmet så att alla fyra räknesätten finns med.
+"""
+from Uppg_7_calc import add, subtract, divide, multiply
 
 def run():
     print("This program will help with simple calculations. What do you want to do?")
@@ -11,17 +50,14 @@ def run():
     a = int(input("A="))
     b = int(input("B="))
     if answer == "1":
-        result = Uppg_7_calc.add(a, b)
-        print(f"{a} operation {b} = {result}")
+        result = add(a, b)
     if answer == "2":
-        result = Uppg_7_calc.subtract(a, b)
-        print(f"{a} operation {b} = {result}")
+        result = subtract(a, b)
     if answer == "3":
-        result = Uppg_7_calc.multiply(a, b)
-        print(f"{a} operation {b} = {result}")
+        result = multiply(a, b)
     if answer == "4":
-        result = Uppg_7_calc.divide(a, b)
-        print(f"{a} operation {b} = {result}")
+        result = divide(a, b)
+    print(f"{a} operation {b} = {result}")
 
 
 if __name__ == '__main__':
