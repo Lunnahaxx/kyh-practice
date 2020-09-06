@@ -20,4 +20,3 @@ print("Wrong, my number is higher... Try again!")
 
 if as_number > n:
 print("Wrong, my number is lower... Try again!")"""
-
