@@ -24,7 +24,7 @@ max_number = 100
 n = random.randint(1, max_number)
 
 
-print("Jag tänker på ett nummer mellan 1 och 100. Du skall nu gissa vilket.")
+print(f"Jag tänker på ett nummer mellan 1 och {max_number}. Du skall nu gissa vilket.")
 antal_gissningar = 1
 antal_gissningar = antal_gissningar + 1
 
