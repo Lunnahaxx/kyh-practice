@@ -1,14 +1,16 @@
-def is_it_too_long(name):
-    return len(name) > 2
+def is_it_too_long(name, max_length):
+    return len(name) > max_length
 
-name_max = 5
 
 def main():
     #students = ["anna", "beatrice", "cecilia", "doris", "esmeralda", "frida", "gunilla"]
+    try:
+        max_length = int(input("Ange max längd på namn: "))
+    except ValueError:
+        max_length = 5
     students = input("Skriv studenternas namn med komma emellan: ").split(',')
-
     for name in students:
-        if is_it_too_long(name):
+        if is_it_too_long(name, max_length):
             print(f"{name.title()} är för långt!")
 
 
