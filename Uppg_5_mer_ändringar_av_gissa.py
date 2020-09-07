@@ -20,7 +20,8 @@ def ask_number():
 
 import random
 
-n = random.randint(1, 3)
+max_number = 100
+n = random.randint(1, max_number)
 
 
 print("Jag tänker på ett nummer mellan 1 och 100. Du skall nu gissa vilket.")
