@@ -1,4 +1,7 @@
-"""Uppgift 5 - mer ändringar av gissa.
+"""Uppg_8.1 - titta igenom alla program hittills ni byggt i kyh-practice,
+och byt ut till f-strings där det behövs.
+-
+Uppgift 5 - mer ändringar av gissa.
 Task assignment:
 Vi har gått igenom funktioner i teorin, nu blir det praktik!
 

@@ -1,4 +1,7 @@
-"""Uppgift 4 - ändra på gissaprogrammet
+"""Uppg_8.1 - titta igenom alla program hittills ni byggt i kyh-practice,
+och byt ut till f-strings där det behövs.
+-
+Uppgift 4 - ändra på gissaprogrammet
 Task assignment:
 Genomför följande ändringar.
 

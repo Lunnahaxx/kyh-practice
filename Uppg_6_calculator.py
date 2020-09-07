@@ -1,4 +1,6 @@
-"""
+"""Uppg:8.1 - titta igenom alla program hittills ni byggt i kyh-practice,
+och byt ut till f-strings där det behövs.
+-
 Här är programmet jag demonstrerade,
 fast utan indentering eller mellanrum.
 Efter programmet står några övningar.
