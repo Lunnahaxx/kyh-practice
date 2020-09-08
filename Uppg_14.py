@@ -7,15 +7,13 @@
 13.5 Låt användaren mata in innehåll i basket i form av en kommaseparerad sträng, t.ex. kan användaren mata in "banana,apple, orange" och det tolkas som listan ["banana", "apple", "orange"]
 
 
-# uppgift14.py
+# uppgift14.py"""
 FRUITS = ['banana', 'apple', 'orange']
 CARS = ['volvo', 'ford', 'tesla']
-"""
+
 
 def run():
-    basket = [
-        'volvo', 'is', 'an', 'orange', 'apple'
-    ]
+    basket = ['volvo', 'is', 'an', 'orange', 'apple']
     cars = []
     fruits = []
     rest = []
@@ -32,7 +30,7 @@ def run():
 
 
 def write_things(items, kind):
-    print(f"{kind.upper()}")
+    print(f"{kind.upper()} ({len(items)}st)")
     for item in items:
         print(f" {item}")
 
