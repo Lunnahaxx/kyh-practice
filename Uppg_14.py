@@ -10,24 +10,28 @@
 # uppgift14.py"""
 FRUITS = ['banana', 'apple', 'orange']
 CARS = ['volvo', 'ford', 'tesla']
-
+ANIMAL = ['cat', 'dog', 'bird']
 
 def run():
-    basket = ['volvo', 'is', 'an', 'orange', 'apple']
+    basket = ['volvo', 'is', 'an', 'orange', 'apple', 'dog', 'tesla', 'hej']
     cars = []
     fruits = []
+    animal = []
     rest = []
+
     for item in basket:
         if item in CARS:
             cars.append(item)
         elif item in FRUITS:
             fruits.append(item)
+        elif item in ANIMAL:
+            animal.append(item)
         else:
             rest.append(item)
     write_things(cars, 'Cars')
     write_things(fruits, 'Fruits')
     write_things(rest, 'Misc')
-
+    write_things(animal, 'Animal')
 
 def write_things(items, kind):
     print(f"{kind.upper()} ({len(items)}st)")
