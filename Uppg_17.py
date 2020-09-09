@@ -23,14 +23,13 @@ lines = content.splitlines()
 #todo_lista = []
 
 
-
 print("Detta är en todo-lista, välj ett val: ")
 print("1 - Öppna TODO listan")
 print("2 - Lägg till uppgift")
 print("3 - Ta bort uppgift")
 print("4 - Avbryt programmet")
 
-todo_list = [0 , 1, 2, 3, ]
+todo_list = []
 todo_list.append(p.read_text())
 
 def user_input():
@@ -39,12 +38,21 @@ def user_input():
     while True:
 
         if answer == "1":
-                    print(content)
+                    print(p.read_text())
         if answer == "2":
-            p.write_text(input("Lägg till uppgift:"))
+            p.read_text()#läser upp vad som finns i listan
+            user_input2 = input("Lägg till uppgift:")
+            todo_list.append(user_input2)
+            p.write_text(f"{todo_list}")
+
+
+            #CL p.write_text(input("Lägg till uppgift:"))
         #if answer == "3":
 
-        #if answer == "4":
+        if answer == "4":
+            quit()
+        user_input()
+
 
 if __name__ == '__main__':
-        main()
+        user_input()
