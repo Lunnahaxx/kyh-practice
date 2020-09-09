@@ -1,21 +1,21 @@
-import pathlib
+#import pathlib
 
-p = pathlib.Path("Uppg_16_fil.log")
+#p = pathlib.Path("Uppg_16_fil.log")
 
-content = p.read_text()
+#content = p.read_text()
 
 
 
 def case():
 
-    dokument = "Uppg_16_text_fil.py"
+    dokument = "Uppg_16_fil.log"
     important = []
     keep_phrases = ["BEAR", "X-RAY"]
 
     with open(dokument) as f:
-        f = f.readlines()
+        lines = f.readlines()
 
-    for line in f:
+    for line in lines:
         line = line.strip()
         for phrase in keep_phrases:
             if keep_phrases in line:
