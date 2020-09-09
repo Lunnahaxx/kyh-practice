@@ -15,43 +15,61 @@ Detta är ett miniprojekt! Jag rekommenderar att ni fortsätter jobba
 tillsammans utanför lektionstid för att bli klara.
 Diskutera hur ni ska lösa uppgiften först tillsammans."""
 
-from pathlib import Path
-p = Path("todo.txt")
-content = p.read_text()
-lines = content.splitlines()
+
+#content_write = p.write_text()
+#lines_write = content_write.splitlines()
+
 
 #todo_lista = []
+#answer = splitlines()
 
 
-print("Detta är en todo-lista, välj ett val: ")
+
+from pathlib import Path
+
+#file = Path("todo.txt")
+#content = file.read_text(encoding='utf8').splitlines()
+#lines = content.splitlines()
+
+
+print("Detta är en Lunnehaxx todo-lista, välj ett val: ")
 print("1 - Öppna TODO listan")
 print("2 - Lägg till uppgift")
 print("3 - Ta bort uppgift")
 print("4 - Avbryt programmet")
 
 todo_list = []
-todo_list.append(p.read_text())
+#todo_list.append(file.read_text())
+
+
 
 def user_input():
+    file = Path("todo.txt")
+    content = file.read_text(encoding='utf8').splitlines()
     answer = input("Gör ditt val: ")
 
     while True:
 
         if answer == "1":
-                    print(p.read_text())
-        if answer == "2":
-            p.read_text()#läser upp vad som finns i listan
-            user_input2 = input("Lägg till uppgift:")
+            print(content)
+        elif answer == "2":
+            user_input2 = input("Lägg till uppgift: ")
             todo_list.append(user_input2)
-            p.write_text(f"{todo_list}")
+            file.write_text(f"{todo_list}")
 
 
             #CL p.write_text(input("Lägg till uppgift:"))
-        #if answer == "3":
+        elif answer == "3":
+            print(file.read_text())
+            user_input3 = input("Vad önskas deletas?: ")
+            todo_list.remove(user_input3)
+            file.write_text(f"{todo_list}")
 
-        if answer == "4":
+        elif answer == "4":
             quit()
-        user_input()
+        else:
+            print("Välj ett nummer mellan 1 - 4")
+        user_input ()
 
 
 if __name__ == '__main__':
