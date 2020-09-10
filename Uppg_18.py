@@ -32,13 +32,15 @@ else:
 #print(people)
 
 def main():
-    people = {
+    people = {#dictionary är varibel =  {'namn' : 'värde'}
         'Fredrik': '0702778511',
         'Olof': '123456789',
         'Lisa': '9999999999',
         'Bodil': '555-666-789'
     }
-    print(f"Antal i listan: {len(people)}")
+    print(f"Antal i listan: {len(people)}") #len skriver ut antalet i dictionaryt
+    answer = input()("Vill du [s]lå upp eller [l]ägga till?")
+    #if answer
     vem = input("Vem vill du ringa?")
     if vem not in people:
         print("Sorry hörru, vet ej vem detta är. Har endast VIP i min katalog")
@@ -47,5 +49,4 @@ def main():
         print(f"Numret till {vem} är {number}")
 
 
-if __name__ == '__main__':
-    main()
+main()
