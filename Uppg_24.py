@@ -31,9 +31,13 @@ import json
 from pprint import pprint
 
 r = requests.get('https://proagile.se/api/publicEvents')
+indata = json.loads(r.text)
+
+pprint(indata)
+
 #r.status_code()
 
-print(r.status_code)
+
 
 #r.json()
 
