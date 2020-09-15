@@ -33,7 +33,21 @@ from pprint import pprint
 r = requests.get('https://proagile.se/api/publicEvents')
 indata = json.loads(r.text)
 
-pprint(indata)
+
+for i in indata:
+    if 'startDate' in i:
+        print(i["startDate"])
+
+#startdate = []
+
+#for i in indata:
+
+#   for j in i:
+#        print(j)
+#        startdate.append.startdate[j]
+
+
+#pprint(indata)
 
 #r.status_code()
 
