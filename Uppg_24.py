@@ -1,5 +1,5 @@
 "2.0.Uppg_24 "
-"15 Sept 2020""
+"15 Sept 2020"
 "Task info"
 """
 Nu ska vi använda oss av kunskapen kring JSON och att installera paket från PyPI (cheese shop) på riktigt!
@@ -28,14 +28,16 @@ Börja med att utöka "requirements.txt" med paketet "requests":
 "Lösningen"
 import requests
 import json
+from pprint import pprint
 
 r = requests.get('https://proagile.se/api/publicEvents')
-r.status_code
+#r.status_code()
 
+print(r.status_code)
 
 #r.json()
 
-#content = Path("telefon_22.json").read_text(encoding='utf8')
+#.read_text(encoding='utf8')
 
 
 
