@@ -36,7 +36,7 @@ import json
 import requests
 from pprint import pprint
 
-r = requests.get("http://www.omdbapi.com/?t=Alien&apikey=9f6d550c")
+r = requests.get("http://www.omdbapi.com/", params={"t": "Alien", "apikey": "9f6d550c"})
 
 #text = r.text
 #list = json.loads(text)
