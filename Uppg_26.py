@@ -32,7 +32,24 @@ Alien (1979) regisserades av Ridley Scott.
 "-------------------------"
 "Koden 2.0.Uppg_ "
 "Lösningen"
+import json
+import requests
+from pprint import pprint
 
+r = requests.get("http://www.omdbapi.com/?t=Alien&apikey=9f6d550c")
+
+#text = r.text
+#list = json.loads(text)
+#alternativt: \
+
+list = r.json()
+pprint(list)
+
+
+
+
+#for element in list:
+    #print(element['startDate'])
 
 
 
