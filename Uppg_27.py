@@ -80,10 +80,10 @@ content = Path("data_U27.json").read_text(encoding='utf8')
 data = json.loads(content)
 
 for key in data:
-
-    #key["rightalign"] == True:
-
-    print(f"{key['what']}, {key['value']}, {key['unit']}")
+    if key["rightalign"] == True:
+        print(f"{key['what']:>25} {key['value']:>12} {key['unit']}")
+    else:
+        print(f"{key['what']:<25} {key['value']:12} {key['unit']}")
 
 #pprint(data)
 
