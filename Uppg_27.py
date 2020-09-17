@@ -80,12 +80,33 @@ content = Path("data_U27.json").read_text(encoding='utf8')
 data = json.loads(content)
 
 for key in data:
-    #if "what" in key:
-    print(key["what"])
+
+    #key["rightalign"] == True:
+
+    print(f"{key['what']}, {key['value']}, {key['unit']}")
 
 #pprint(data)
 
 
+""""
+"-------------------------"
+"Ndean följer hur man printar bara what i lösningen"
+from pathlib import Path                                                
+import json                                                             
+from pprint import pprint                                               
+                                                                        
+                                                                        
+content = Path("data_U27.json").read_text(encoding='utf8')              
+data = json.loads(content)                                              
+                                                                        
+for key in data:                                                        
+    #if "what" in key:                                                  
+    print(key["what"])                                                  
+"-------------------------"                                                                        
+"""
+#for key in data:
+#    #if "what" in key:
+#    print(key["what"], key["value"])
 
 
 
