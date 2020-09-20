@@ -1,5 +1,4 @@
-"2.0.Uppg_24 "
-"15 Sept 2020"
+"2.0.Uppg_ "
 "Task info"
 """
 Fortsättning på uppgift 24 - mer om JSON och requests (webapi-anrop).
@@ -27,52 +26,8 @@ Den första kolumnen, fram till och med ":" är 12 tecken bred, och högerställ
 Tips: det går bra att använda -01 och -31 för att inkludera hela månaden, även om vissa månader inte har så många dagar!
 """
 "-------------------------"
-"Koden 2.0.Uppg_24 "
+"Koden 2.0.Uppg_ "
 "Lösningen"
-import requests
-#import json
-#from pprint import pprint
-
-
-# 24.2 print(r.text)
-
-def main(startdate, enddate):
-    r = requests.get('https://proagile.se/api/publicEvents')
-    course_list = r.json()
-
-for course in course_list:
-
-    startdate ="2020-10-01"
-    enddate = "20-10-31"
-    coursedate = course['startDate']
-    if startdate < coursedate and coursedate < enddate:
-        print()
-        print(f"Kursnamn: {course['name']}")
-        print(f"Startdatum: {coursedate}")
-        print(f"Slutdatum: {course['endDate']}")
-
-
-
-
-"""
-for i in list:
-    if 'startDate' in i:
-        #print(i)
-        print(i["startDate"])
-
-
-# key === startdate
-# value === innhållet efter; :
-#
-
-
-
-
-
-
-
-
-
 
 "-------------------------"
 "-------------------------"
@@ -80,12 +35,11 @@ for i in list:
 
 "-------------------------"
 "-------------------------"
-"""
-"""
+
+
 def main():
     pass
 
 
 if __name__ == '__main__':
     main()
-"""

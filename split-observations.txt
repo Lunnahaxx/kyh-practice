@@ -1,0 +1,19 @@
+När man skriver (f.k n.m.s) test = "abc,def,ghi".split( "sda,")
+skriver den int ut "sda"
+
+Det krashar om man inte skriver något mellan paransterna.
+test = "abc,def,ghi".split(' ')
+print(test)
+
+den splittar på båda
+
+
+
+
+
+
+
+
+
+
+"""

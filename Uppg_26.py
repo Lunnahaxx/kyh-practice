@@ -36,15 +36,51 @@ import json
 import requests
 from pprint import pprint
 
-r = requests.get("http://www.omdbapi.com/", params={"t": "Alien", "apikey": "9f6d550c"})
 
-#text = r.text
-#list = json.loads(text)
-#alternativt: \
 
-list = r.json()
-pprint(list)
+film = input("Sök efter vilken film du vill ha info om: ")
 
+
+
+
+
+def main():
+    film = input("Sök efter vilken film du vill ha info om: ")
+    r = requests.get("http://www.omdbapi.com/", params={f"t": film, "apikey": "9f6d550c"})
+    # !list = r.json()
+    text = r.text
+    result = json.loads(text)
+    pprint(result)
+
+    year = result['Year']
+
+    print("*** Resultat från OMDB! ***\n ")
+    print(f"Title: {result['actors']}")
+    print(f"Skådisar: {result['imdbRating']}")
+    print(f"Skådisar: {result['actors']}")
+    print(f"Skådisar: {result['actors']}")
+
+
+
+
+
+
+
+
+
+
+#for i in result:
+#    print(i["Title:"])
+
+
+#pprint(list)
+
+#for element in list:
+ #   print(element['startDate'])
+
+#Title
+#Actors
+#imdbRating
 
 
 
@@ -52,6 +88,9 @@ pprint(list)
     #print(element['startDate'])
 
 
+#text = r.text
+#list = json.loads(text)
+#alternativt: \
 
 
 
