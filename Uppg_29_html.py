@@ -7,7 +7,7 @@ Hur? Jo genom att utgå ifrån bifogad fil, och byta ut "QUOTE_TEXT" mot
 get-citat som ni hittar i följande API:
    https://api.adviceslip.com/advice
 
-Gör bara ett GET-request mot det så får ni random life advice!
+29.1 Gör bara ett GET-request mot det så får ni random life advice!
 
 HTML-fil att utgå ifrån bifogas som "uppgift29_template".html. 
 Spara den i er kyh-practice.
@@ -21,42 +21,34 @@ funktionen i string. Diskutera gärna igenom allt ni behöver göra först!
 "-------------------------"
 "Koden 2.0.Uppg_29 "
 "Lösningen"
-import webbrowser
+#import webbrowser
 import requests
 from pathlib import Path
 
 r = requests.get("https://api.adviceslip.com/advice")
-#r.text
+advice = r.json()
+dict = advice["slip"]
+value = dict["advice"]
 
-print(r.json())
+content = Path("uppgift29_template.html").read_text()
+html = content.replace("QUOTE_TEXT", value)
+p = Path("goat_q.html")
+p.write_text(html, encoding='utf8')
 
+print(advice)
+#print(r.json())
 
 #p = Path('uppgift29_template.html')
-
-
 #webbrowser.open(str(p))
 
-
-
+#s = "QUOTE_TEXT"
+#s2 = s.replace("QUOTE_TEXT", "r")
 
 #s = "Hejsan Banarne!"
 
 #s2 = s.replace("Hej", "Däj")
 
 #print(s2)
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 "-------------------------"
