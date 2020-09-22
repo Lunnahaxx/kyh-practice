@@ -1,0 +1,59 @@
+Gå igenom alla func.
+Klass eller metod
+())
+func - följs av paranterser ex len()
+
+FUNKTIONER
+sorted()
+sum()
+print()
+reversed()
+float()
+input()
+
+
+METODER:
+.append
+.title
+(.randint) är en function
+.join
+(.loads)
+write_text from Path
+
+from pprint import pprint då det sista är import av funktion
+from pprint är en modul
+
+dict.key accesear en nyckel i dicten
+from random import.randint()
+
+
+Uppg 1
+main - func
+alla kommande def kom
+
+upg2
+n = random.randint(1, 3) - func
+input("Your guess: ") -func
+print("Correct!") .func
+
+Upg3
+(import random -statement)random är en modul som man importar.
+(break - statement)
+
+Upg4
+def ask_number(): -func
+(return - statement)
+
+---
+Kör ba
+
+strip
+split
+join
+
+annat sätt att strippa
+strang_striped = strang.replace(' ','')
+
+
+
+
