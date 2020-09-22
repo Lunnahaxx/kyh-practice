@@ -17,8 +17,8 @@ och join-funktionen. Även list comprehension kan komma till användning. "
 "Lösningen"
 strang = input("Skriv en sträng så får du längden/se om det är ett palindrom: ")
 #strang_lenght = len(strang)
-strang_striped = strang.replace(' ','')
-strang_backwards = ''.join(list(reversed(strang_striped)))
+strang_striped = strang.replace(' ', '')
+strang_backwards = strang[::-1]
 
 print("Hemlig info: ", strang_striped, "=", strang_backwards )
 
