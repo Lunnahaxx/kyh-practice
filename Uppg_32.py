@@ -15,10 +15,17 @@ och join-funktionen. Även list comprehension kan komma till användning. "
 "-------------------------"
 "Koden Uppg_ "
 "Lösningen"
-strang = input("Skriv en sträng så får du längden: .")
+strang = input("Skriv en sträng så får du längden: ")
 strang_lenght = len(strang)
+strang_backwards = ''.join(list(reversed(strang)))
 
-print(strang_lenght)
+print("Hemlig info: ", strang, strang_backwards)
+
+if strang.lower() == strang_backwards.lower():
+    print("Det är ett palindrom. ")
+else:
+    print("Ej ett palindrom. ")
+
 
 
 
