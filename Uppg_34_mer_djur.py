@@ -42,8 +42,16 @@ if __name__ == '__main__':
     djur = []
     zebra = Djur('Zebra', False, 'https://sv.wikipedia.org/wiki/Zebror')
     tiger = Djur('Tiger', True, 'https://sv.wikipedia.org/wiki/Tiger')
+    delfin = Djur('Delfin', True, 'https://sv.wikipedia.org/wiki/Delfiner')
+    lunnefogel = Djur('Lunnefågel', False, 'https://sv.wikipedia.org/wiki/Lunnef%C3%A5gel')
+    myra = Djur('Myra', False, 'https://sv.wikipedia.org/wiki/Myror')
+
+
     djur.append(zebra)
     djur.append(tiger)
+    djur.append(delfin)
+    djur.append(lunnefogel)
+    djur.append(myra)
     html = '<html><table>'
     for d in djur:
         cell_2 = 'Vegetarian'
