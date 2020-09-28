@@ -31,10 +31,10 @@ def sum_ls(ls):
     return summa
 
 def multiply_all_in_ls(ls):
-    ls = [1, 2, 3, 4, 5, 6, 7, 8]
-    for numb in ls:
-        result = numb * numb
-    return result
+    summa = 1
+    for i in ls:
+        summa *= int(i)
+    return summa
 
 #list = [1, 2, 3]
 
@@ -56,19 +56,21 @@ def run():
         b = int(input("B= "))
         result = add_sum_max_2(a, b)
     if answer == "2":
-
         lista = input("Ange värden till listan du vill summera med komma emellan: ").split(',')
         print(type(lista))
         print("Nu får du värden ifrån din lista: ")
         result = sum_ls(lista)
+    if answer == "3":
+        lista = input("Ange värden till listan du vill multiplicera med komma emellan: ").split(',')
+        print("Nu får du värden ifrån din lista: ")
+        result = multiply_all_in_ls(lista)
 
-        #a = int(input("Ange listan du vill kalla på: 1=ls_1, 2=ls_2"))
+
         #if a == "1":
         #    result =
         #if a == "2":
 
-    #if answer == "3":
-    #    result = multiply_all_in_ls(a, b)
+
 
     print("Result = " + str(result))
 
