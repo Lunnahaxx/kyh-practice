@@ -30,7 +30,7 @@ tuppel som bygger på listan. T.ex.
 ... ska ge:
 
     (1, 2, 3)
-
+ 
 """
 "-------------------------"
 "Koden .Uppg_ "
