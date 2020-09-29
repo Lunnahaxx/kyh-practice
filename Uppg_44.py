@@ -33,16 +33,35 @@ tuppel som bygger på listan. T.ex.
  
 """
 "-------------------------"
-"Koden .Uppg_ "
+"Koden .Uppg_44.1 "
 "Lösningen"
+print("Uppgift 44.1. En namn och nummer övning för tuples.")
+
 user_tuple=(input("Ange ditt namn: "), int(input("Ange din ålder: ")))
 def user_info(user_infooo):
-    print(f"namn: {user_infooo[0]}\n"
+    print(f"Namn: {user_infooo[0]}\n"
           f"Ålder: {user_infooo[1]}")
 
 user_info(user_tuple)
 
+"Koden. Uppg_44.2"
+print("\nUppgift 44.2 En funktionk med två tal som indata, som returnerar dessa i omvänd ordning")
+num_tupp = (1, 2)
+def switch(old_number):
+    new_number = (old_number[1], old_number[0])
+    return new_number
 
+print(f"Detta är omvända siffror ifrån num_tup inputen {switch(num_tupp)}")
+
+
+"Koden. Uppg_44.3"
+print("\nUppgift 44.3")
+
+ls = [1, 2, 3]
+def list_to_Tuple(ls):
+    t = (ls[0], ls[1], ls[2])
+    return t
+print(list_to_Tuple(ls))
 
 "-------------------------"
 "-------------------------"
