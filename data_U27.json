@@ -1,51 +1,51 @@
 
 [
     {
-        "what" : "Energi",
-        "value" : 385,
-        "unit" : "kcal",
+        "Froga": "Energi",
+        "Svar": 385,
+        "Svars_alt": "kcal",
         "rightalign" : false
     },
     {
-        "what" : "Fett",
-        "value" : 2.7,
-        "unit" : "g",
+        "Froga": "Fett",
+        "Svar": 2.7,
+        "Svars_alt": "g",
         "rightalign" : false
     },
     {
-        "what" : "varav mättat fett",
-        "value" : 1.7,
-        "unit" : "g",
+        "Froga": "varav mättat fett",
+        "Svar": 1.7,
+        "Svars_alt": "g",
         "rightalign" : true
     },
     {
-        "what" : "Kolhydrat",
-        "value" : 82,
-        "unit" : "g",
+        "Froga": "Kolhydrat",
+        "Svar": 82,
+        "Svars_alt": "g",
         "rightalign" : false
     },
     {
-        "what" : "varav sockerarter",
-        "value" : 79.5,
-        "unit" : "g",
+        "Froga": "varav sockerarter",
+        "Svar": 79.5,
+        "Svars_alt": "g",
         "rightalign" : true
     },
     {
-        "what" : "Fiber",
-        "value" : 6.7,
-        "unit" : "g",
+        "Froga": "Fiber",
+        "Svar": 6.7,
+        "Svars_alt": "g",
         "rightalign" : false
     },
     {
-        "what" : "Protein",
-        "value" : 4.6,
-        "unit" : "g",
+        "Froga": "Protein",
+        "Svar": 4.6,
+        "Svars_alt": "g",
         "rightalign" : false
     },
     {
-        "what" : "Salt",
-        "value" : 0.48,
-        "unit" : "g",
+        "Froga": "Salt",
+        "Svar": 0.48,
+        "Svars_alt": "g",
         "rightalign" : false
     }
 ]

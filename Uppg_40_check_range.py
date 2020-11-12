@@ -2,7 +2,7 @@
 "Uppg_40"
 
 """
-1. Skriv en funktion om "vänder" en textsträng baklänges - utan att använda 
+1. Skriv en funktion som "vänder" en textsträng baklänges - utan att använda 
 "reverse" (eller [::-1])!
 Använd istället strängar eller listor, och en for-loop.
 T.ex. "12345" blir "54321".
@@ -30,16 +30,16 @@ ord_strang = "hej på dig"
 
 for i in range(len(lista)-1, -1, -1):
     print(f"Lista: {i +1} ")
-for i in range(len(ord_strang) - 1, -1, -1):
-        for word in ord_strang:
+#for i in range(len(ord_strang) - 1, -1, -1):
+#        for word in ord_strang:
 
-    print("Sträng: ", i)
+#    print(f"Sträng: {i}")
 
 
 "30.2"
 print("\nUppggift 30.2")
 print("Låt oss se vlika stora bokstäver det finns i en mening. ")
-
+"""
 #input()
 #upper = []
 def upper_letters(uppe):
@@ -52,6 +52,21 @@ upper_letters("DETta ÄR EN StrÄNG AV stoRa bOkStävER. ")
 letters = "DETta ÄR EN StrÄNG AV stoRa bOkstäver. "
 upper_letters = [char for char in letters if char.isupper()]
 print("Detta är de stora bokstäverna i meningen ovan, kan ser du budskapet?: " + str(upper_letters))
+"""
+"30.2 m David"
+
+def caps(text):
+    lista = []
+    for char in text:
+        if char.isupper():
+            lista.append(char)
+    lista_2 = len(lista)
+    return lista_2
+
+run = caps(text="Vad vIll Vi SKriva hÄR?")
+
+print("Här antalet stora bokstäver i texten: ", run)
+
 
 "30.3"
 print(f"\nUppggift 30.3")
@@ -59,7 +74,8 @@ print(f"\nUppggift 30.3")
 #inrange(value=10, min=0, max=100) = True #eftersom 10 ligger mellan 0 och 100.
 """
 Beskrivning:
-Program för att komma om integer nummer är inom eller utanför ett område. 
+Program för att komma om integer nummer är inom
+ eller utanför ett område. 
 """
 print("Låt oss kolla vilka tal som är innanför och utanför andra tal. ")
 # Given range

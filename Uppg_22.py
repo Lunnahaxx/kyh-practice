@@ -21,10 +21,10 @@ Tips 2: json.dumps kommer behövas
 "Koden 2.0.Uppg_22 "
 "Lösningen"
 from pathlib import Path
-import json_galen_test
+import json_galen_test1
 
 content = Path("telefon_22.json").read_text(encoding='utf8')
-json_object = json_galen_test.loads(content)
+json_object = json_galen_test1.loads(content)
 
 print(file)
 

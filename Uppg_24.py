@@ -30,7 +30,7 @@ Tips: det går bra att använda -01 och -31 för att inkludera hela månaden, ä
 "Koden 2.0.Uppg_24 "
 "Lösningen"
 import requests
-#import json
+import json
 #from pprint import pprint
 
 

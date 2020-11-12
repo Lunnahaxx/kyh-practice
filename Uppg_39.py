@@ -15,33 +15,38 @@ av en lista av heltal.
 #tal = input("Ange 3 tal med komma emellan: Ex. 1,3,4: ").split(',')
 
 
-"39.1"
-def add_sum_max(a, b, c):
-    result = a + b + c
-    return result
+"def 39.1"
+def maximum(a, b, c):
+    biggest = a
+    if biggest < b:
+        biggest = b
+    if biggest < c:
+        biggest = c
+    return biggest
 
+"def 39.1_2"
 def add_sum_max_2(a, b):
     result = a + b
     return result
 
+"def 39.2"
 def sum_ls(ls):
     summa = 0
     for i in ls:
         summa += int(i)
     return summa
 
+"def 39.3"
 def multiply_all_in_ls(ls):
     summa = 1
     for i in ls:
         summa *= int(i)
     return summa
 
-#list = [1, 2, 3]
-
 def run():
     print("Välj nedan vad du vill göra: ")
-    print("1 - Beräknar maximum av tre tal.")
-    print("11 - Beräknar maximum av två tal")
+    print("1 - Skriv ut maximum av tre tal.")
+    print("11 - Beräknar värdet av två tal")
     print("2 - Summera alla tal i en lista.")
     print("3 - Räknar ut produkten (multiplikation av alla tal) av en lista av heltal.")
 
@@ -50,7 +55,7 @@ def run():
         a = int(input("A= "))
         b = int(input("B= "))
         c = int(input("C= "))
-        result = add_sum_max(a, b, c)
+        result = maximum(a, b, c)
     if answer == "11":
         a = int(input("A= "))
         b = int(input("B= "))
@@ -64,12 +69,6 @@ def run():
         lista = input("Ange värden till listan du vill multiplicera med komma emellan: ").split(',')
         print("Nu får du värden ifrån din lista: ")
         result = multiply_all_in_ls(lista)
-
-
-        #if a == "1":
-        #    result =
-        #if a == "2":
-
 
 
     print("Result = " + str(result))
@@ -95,3 +94,11 @@ print(length)
 #num_ls = [1, 2 ,3, 4]
 #for i in range(len(num_ls)):
 #    print(num_ls[i])
+"Genomgång av uppg."
+
+"39.1"
+
+
+"39.2"
+
+"39.3"

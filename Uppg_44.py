@@ -35,7 +35,7 @@ tuppel som bygger på listan. T.ex.
 "-------------------------"
 "Koden .Uppg_44.1 "
 "Lösningen"
-print("Uppgift 44.1. En namn och nummer övning för tuples.")
+print("\nUppgift 44.1: -En namn och nummer övning för tuples.")
 
 user_tuple=(input("Ange ditt namn: "), int(input("Ange din ålder: ")))
 def user_info(user_infooo):
@@ -45,23 +45,33 @@ def user_info(user_infooo):
 user_info(user_tuple)
 
 "Koden. Uppg_44.2"
-print("\nUppgift 44.2 En funktionk med två tal som indata, som returnerar dessa i omvänd ordning")
+print("\nUppgift 44.2: -En funktion med två tal som indata, som returneras i omvänd ordning.")
 num_tupp = (1, 2)
 def switch(old_number):
     new_number = (old_number[1], old_number[0])
     return new_number
 
-print(f"Detta är omvända siffror ifrån num_tup inputen {switch(num_tupp)}")
+print(f"Detta är omvända siffror ifrån den hårdkodade ''num_tup'' där inputen är {num_tupp} och outputen då blir {switch(num_tupp)}.")
 
 
 "Koden. Uppg_44.3"
-print("\nUppgift 44.3")
+print("\nUppgift 44.3: -Omvandla en lista till en tuple.")
 
 ls = [1, 2, 3]
 def list_to_Tuple(ls):
     t = (ls[0], ls[1], ls[2])
     return t
 print(list_to_Tuple(ls))
+
+
+print("\nUppgift 44.3. (Kristins version) Omvandla en lista till en tuple.")
+
+def to_tuple(ls):
+    return tuple(ls)
+
+a = to_tuple([1, 2, 3])
+print(f"Lista omvandlad till tuple: {to_tuple(a)}")
+print(f"Typ: {type(a)}")
 
 "-------------------------"
 "-------------------------"

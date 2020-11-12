@@ -7,16 +7,16 @@ FUNKTIONER
 sorted()
 sum()
 print()
-reversed()
+reversed() får fler indata
 float()
 input()
 
 
-METODER:
+METODER: (har alltid 2 input)
 .append
 .title
 (.randint) är en function
-.join
+.join -har ett argument
 (.loads)
 write_text from Path
 
@@ -25,7 +25,6 @@ from pprint är en modul
 
 dict.key accesear en nyckel i dicten
 from random import.randint()
-
 
 Uppg 1
 main - func
@@ -47,13 +46,16 @@ def ask_number(): -func
 ---
 Kör ba
 
-strip
-split
-join
+.strip() annat sätt text_striped = text.replace(' ','')
+.split()
+.join()
 
-annat sätt att strippa
-strang_striped = strang.replace(' ','')
+Sätt att breakea en funktion.
+break
+retur
+continue
 
+list comprehension - att göra saker i en rad med listor istället för
 
 
 

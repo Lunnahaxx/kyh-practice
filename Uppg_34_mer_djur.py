@@ -38,12 +38,21 @@ class Djur:
         self.carnivore = carnivore
         self.wiki_url = wiki_url
 
+    def carnivore_or_vegetarian(self):
+        if self.carnivore:
+            return "Köttätare"
+        else:
+            return "Vetegarian"
+
+    def get_html_table_row(self):
+        return f'<tr><td><a href="{self.wiki_url}">{self.name}</td><td>{cell_2}</td></tr>\n'
+
 if __name__ == '__main__':
     djur = []
-    zebra = Djur('Zebra', False, 'https://sv.wikipedia.org/wiki/Zebror')
+    zebra = Djur(name='Zebra', carnivore=False, wiki_url='https://sv.wikipedia.org/wiki/Zebror')
     tiger = Djur('Tiger', True, 'https://sv.wikipedia.org/wiki/Tiger')
     delfin = Djur('Delfin', True, 'https://sv.wikipedia.org/wiki/Delfiner')
-    lunnefogel = Djur('Lunnefågel', False, 'https://sv.wikipedia.org/wiki/Lunnef%C3%A5gel')
+    lunnefogel = Djur('Lunnefågel', True, 'https://sv.wikipedia.org/wiki/Lunnef%C3%A5gel')
     myra = Djur('Myra', False, 'https://sv.wikipedia.org/wiki/Myror')
 
 
@@ -52,17 +61,16 @@ if __name__ == '__main__':
     djur.append(delfin)
     djur.append(lunnefogel)
     djur.append(myra)
-    html = '<html><table>'
+    html_text = '<!DOCTYPE html>\n<head>\n<meta charset="UTF-8">\n</head>'
+    html_text += '<html><table>'
     for d in djur:
-        cell_2 = 'Vegetarian'
-        if d.carnivore:
-            cell_2 = 'Köttätare'
-        html += f'<tr><td><a href="{d.wiki_url}">{d.name}</td><td>{cell_2}</td></tr>\n'
-    html += '</table></html>'
-    OUTPUT_PATH.write_text(html, encoding='utf8')
+        cell_2 = d.carnivore_or_vegetarian()
+        html_text += d.get_html_table_row()
+    html_text += '</table></html>'
+    OUTPUT_PATH.write_text(html_text, encoding='utf8')
     webbrowser.open(str(OUTPUT_PATH))
 
-print(f"{zebra}")
+#print(f"{zebra}")
 "-------------------------"
 "-------------------------"
 "Förklaring till Lösningen på Koden"

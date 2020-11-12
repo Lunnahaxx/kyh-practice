@@ -3,13 +3,16 @@
 
 tal = input("Ange tal med komma emellan: Ex. 1,3,4,5,6,100: ").split(',')
 summa = [int(elem)for elem in tal]
-baklanges = ', '.join(list(reversed(tal)))
+baklanges = ', '.join(list(reversed(tal))) #text[::-1] annat sätt
 print_talen = ' ,'.join(tal)
 
 od_even = ' ,'.join(tal)
 
-even = [num for num in tal if int(num) % 2 == 0] #Dett är ett exempel på list comprehension
-odd = [num for num in tal if int(num) % 2 == 1]
+even = [num for num in tal if int(num) % 2 == 0] #Detta är ett exempel på list comprehension, när man skriver num innan får loopen
+# list comprehension för. fösrsta num är att vi vill skapa en ny lista utan interation som sedan i nästa del göra något
+odd = [num for num in tal if int(num) % 2 != 0]
+
+print(summa)
 
 print(f"Första talet: {summa[0]}\nSista talet: {summa[-1]}\nSumman av talen: {sum(summa)}\nTalen baklänges: {baklanges}\n")
 print(f"Antal tal: {len(tal)}")

@@ -38,7 +38,7 @@ from pprint import pprint
 
 
 
-film = input("Sök efter vilken film du vill ha info om: ")
+#film = input("Sök här efter vilken film du vill ha info om: ")
 
 
 
@@ -60,7 +60,8 @@ def main():
     print(f"Skådisar: {result['actors']}")
     print(f"Skådisar: {result['actors']}")
 
-
+if __name__ == '__main__':
+    main()
 
 
 
@@ -108,6 +109,5 @@ def main():
     pass
 
 
-if __name__ == '__main__':
-    main()
+
 """

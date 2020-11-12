@@ -1,4 +1,4 @@
-"Uppg_30 "
+"Uppg_30"
 "Task info"
 """
 Träna slicing av strängar och listor!
@@ -33,14 +33,34 @@ det är moderna tider!
 "-------------------------"
 "Koden Uppg_30 "
 "Lösningen"
-reg_nr_1 = input("Skriv in reg nr: ")
-print(f"Bokstävsgrupp: {reg_nr_1[0:3]} \nSiffergrupp: {reg_nr_1[3:6]}")
+heltal = input("Ange tal med komma emellan: 1,2,3,5,100 ").split(',')
+num = []
+
+for i in heltal:
+    num.append(int(i))
+#print(f"Första talet {heltal[0]} \nSista talet: {heltal[-1]} \nSumman av talen: {sum(num)} \nTalen baklänges: {heltal[::-1]}")
+print(heltal.reversed())
 
 
 
+#tal = input("Ange tal med komma emellan: ").split(',')
+#print(sum(num))
+
+#print(int()"Summan av talen:" + sum(heltal))
+#print(heltal.reverse())
+#heltal_2 = inte
+#print()
+
+#summan = gör en int och loopa uppräkningen
+
+#Summan av talen: {sum(heltal)}
+#\nTalen baklänges: {heltal[]}
 "-------------------------"
 "-------------------------"
 "Förklaring till Lösningen på Koden"
+"""30.1 reg_nr_1 = input("Skriv in reg nr: ")
+print(f"Bokstävsgrupp: {reg_nr_1[0:3]} \nSiffergrupp: {reg_nr_1[3:6]}")
+"""
 
 "-------------------------"
 "-------------------------"
